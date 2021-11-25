@@ -1,0 +1,279 @@
+@import "./import/bucles";
+@import "./import/condicionales";
+@import "./import/each";
+@import "./import/extends";
+@import "./import/maps";
+@import "./import/mixins";
+@import "./import/operaciones";
+@import "./import/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background : rgb(54, 101, 107);
+    color: $colorPrimario;
+}
+
+
+.contenedor__grid{
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+}
+
+.contenedor__grid .navegador , 
+.contenedor__grid .contenido ,
+.contenedor__grid .asidebar ,
+.contenedor__grid .info {
+     /* background: rgb(93, 93, 129); */
+     padding: 20px;
+     border-radius: 4px;
+}
+
+.contenedor__grid .navegador {
+    
+    /* background: white; */
+    color: rgb(10, 10, 9);
+    grid-column: 1 / 4;
+  
+
+}
+
+.contenedor__grid .contenido {
+
+   /* grid-area: contenido; */
+   grid-column: 1 / 3;
+   color: $colorPrimario;
+   background: $colorSecundario;
+  
+}
+
+.contenedor__grid .asidebar {
+
+    grid-column: 3 / 4;
+    border: $colorPrimario;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10px;
+    flex-direction: column;
+    background: $colorSecundario;
+
+}  
+
+.contenedor__grid .asidebar__imagen{
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+.contenedor__grid .info {
+
+    grid-column: 1 / 4;
+
+}
+
+
+@media  screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .contenedor__grid .contenido{
+        grid-column: 1 / -1;
+    }
+    .contenedor__grid .asidebar{
+        grid-column: 1 / -1;
+    }
+
+
+}
+
+
+// footer
+
+.info{
+    
+   
+    width: auto;
+    padding: 50px 0px;
+    background-image: linear-gradient(to bottom, black , white);
+    color:$colorSecundario;
+    .info__container{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: auto; 
+        .info__box{
+
+          display: flex;
+          flex-direction: column;
+          padding: 50px;
+           .info__titulo{
+
+              margin-bottom: 10px;
+              color: $colorSecundario;
+              font-weight: 700;
+              .info__rrss {
+
+                   margin-top: 5px;
+                   color: rgb(90, 45, 90);
+                   font-weight: 600;
+                   text-decoration: none;
+                     .info__box .info__rrss:hover{
+
+                        opacity: 0.8;
+                         .info__box .info__rrss .fab{
+
+                          font-size: 20px;
+                          
+                         }
+                     }
+                 }
+             } 
+         }    
+     }
+ }
+ 
+.info__copy p{
+    color: black;
+}
+
+ /* MENUUU */
+ 
+ 
+
+   
+    
+
+/* transfomacion */
+
+
+
+
+.navegador {
+   
+    width: auto;
+    background-color: rgb(15, 15, 15);
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   
+} 
+    .navegador__seleccion{
+           display: flex;
+           margin-right: 10px;
+           align-items: center;
+           justify-content: center;
+         
+    }
+.navegador__seleccion .navegador__boton .navegador__ruta {
+                text-decoration: none;
+                color: $colorPrimario; 
+                display: block;
+                text-align: center;
+               
+            }
+  .navegador__boton{           
+                    list-style: none;
+                    padding: 5px ;
+                   
+                 }   
+                     
+ .navegador__boton:hover{
+                       background-color: rgb(36, 102, 224) ;
+                       transform: skew(20deg,10deg);
+                       transition: all 1s;
+                    }                    
+  
+
+.navegador__imagen{                             
+    height: 60px; 
+    width: 60px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     
+  }
+ .navegador__imagen:hover{
+          transition: all, 1s ;
+          transform: rotate(360deg); 
+           
+           }
+                          
+.campo input:hover {
+    
+    width: auto;
+    height: auto;
+    color: rgb(20, 6, 87);
+    background-color: slategray;
+    transition: 1s;
+    transform: scale(2, 1);
+    
+
+}
+.campo button:hover {
+
+    width: auto;
+    height: auto;
+    background-color: $colorPrimario;
+    transition: 1s;
+    color: rgb(20, 6, 87);
+    transform: scale(2, 1);
+
+}
+
+.contenido__titulo {
+    color: burlywood;
+}
+
+// tabla
+
+.contenido__color1{
+    color: aqua;
+    .contenido__color2{
+        color: rgb(84, 84, 228);
+        .contenido__color3{
+            color: $colorSecundario;
+            .contenido__color4{
+                color: rgb(82, 15, 52);
+            }
+        }
+    }
+}
+
+
+// aside
+
+
+.asidebar__titulo{
+    color: burlywood;
+}
+ .asidebar__parrafo{
+     color: $colorPrimario;
+ }
+
+
+
+
+
+/* Gradientes en el header y footer */
+/* transformaciones en el header(para ser preciso en el logo y en el menu) */

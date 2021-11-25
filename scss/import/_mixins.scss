@@ -1,0 +1,11 @@
+@import "./variables";
+
+  
+@mixin fuente ($tamanioFuente){
+    font-size: $tamanioFuente;
+}
+    
+.info {
+    @include fuente (15px)
+}
+

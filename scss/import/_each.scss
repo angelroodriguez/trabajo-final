@@ -1,0 +1,8 @@
+@import "./variables";
+
+@each $color in rgb(110, 103, 129),blue,black,pink {
+    .fondo-#{$color}{
+        background-color: #{$color};
+    }
+}
+
