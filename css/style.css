@@ -44,12 +44,14 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto); }
+  grid-template-rows: repeat(5, auto); }
 
 .contenedor__grid .navegador,
 .contenedor__grid .contenido,
 .contenedor__grid .asidebar,
-.contenedor__grid .info {
+.contenedor__grid .info,
+.contenedor__grid .container,
+.contenedor__grid .card {
   /* background: rgb(93, 93, 129); */
   padding: 20px;
   border-radius: 4px; }
@@ -57,7 +59,8 @@ body {
 .contenedor__grid .navegador {
   /* background: white; */
   color: #0a0a09;
-  grid-column: 1 / 4; }
+  grid-column: 1 / 4;
+  height: 8rem; }
 
 .contenedor__grid .contenido {
   /* grid-area: contenido; */
@@ -79,6 +82,14 @@ body {
 .contenedor__grid .asidebar__imagen {
   width: 100%;
   margin-top: 5px; }
+
+.contenedor__grid .container {
+  grid-column: 1 / 4; }
+
+.contenedor__grid .card {
+  grid-column: 1 / 4;
+  margin: 3px;
+  background: black; }
 
 .contenedor__grid .info {
   grid-column: 1 / 4; }
@@ -128,7 +139,6 @@ body {
 .navegador {
   width: auto;
   background-color: #0f0f0f;
-  height: 115px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,6 +210,12 @@ body {
 
 .asidebar__parrafo {
   color: white; }
+
+.contenido__color1 {
+  margin: 5px;
+  border: 1px solid blue; }
+  .contenido__color1 .contenido__color1 th {
+    border: 1px blue; }
 
 /* Gradientes en el header y footer */
 /* transformaciones en el header(para ser preciso en el logo y en el menu) */
