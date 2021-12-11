@@ -89,8 +89,8 @@ body{
 
 .contenedor__grid .card{
     grid-column: 1 / 4;    
-    margin: 3px;
     background: black;
+    margin: 3px;
    
     
 }
@@ -112,9 +112,16 @@ body{
     .contenedor__grid .asidebar{
         grid-column: 1 / -1;
     }
-
+    .container {
+        grid-column: 1 / -1;
+        margin: auto;
+        
+    }
+  
 
 }
+
+
 
 
 // footer
@@ -124,8 +131,8 @@ body{
    
     width: auto;
     padding: 50px 0px;
-    background-image: linear-gradient(to bottom, black , white);
-    color:$colorSecundario;
+    background:rgb(0, 0, 0);
+    color:#fff;
     .info__container{
 
         display: flex;
@@ -141,7 +148,7 @@ body{
            .info__titulo{
 
               margin-bottom: 10px;
-              color: $colorSecundario;
+              color: #fff;
               font-weight: 700;
               .info__rrss {
 
@@ -165,7 +172,7 @@ body{
  }
  
 .info__copy p{
-    color: black;
+    color: white;
 }
 
  /* MENUUU */
@@ -201,7 +208,7 @@ body{
     }
 .navegador__seleccion .navegador__boton .navegador__ruta {
                 text-decoration: none;
-                color: $colorPrimario; 
+                color: #fff; 
                 display: block;
                 text-align: center;
                

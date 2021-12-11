@@ -88,8 +88,8 @@ body {
 
 .contenedor__grid .card {
   grid-column: 1 / 4;
-  margin: 3px;
-  background: black; }
+  background: black;
+  margin: 3px; }
 
 .contenedor__grid .info {
   grid-column: 1 / 4; }
@@ -100,13 +100,16 @@ body {
   .contenedor__grid .contenido {
     grid-column: 1 / -1; }
   .contenedor__grid .asidebar {
-    grid-column: 1 / -1; } }
+    grid-column: 1 / -1; }
+  .container {
+    grid-column: 1 / -1;
+    margin: auto; } }
 
 .info {
   width: auto;
   padding: 50px 0px;
-  background-image: linear-gradient(to bottom, black, white);
-  color: black; }
+  background: black;
+  color: #fff; }
   .info .info__container {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +122,7 @@ body {
       padding: 50px; }
       .info .info__container .info__box .info__titulo {
         margin-bottom: 10px;
-        color: black;
+        color: #fff;
         font-weight: 700; }
         .info .info__container .info__box .info__titulo .info__rrss {
           margin-top: 5px;
@@ -132,7 +135,7 @@ body {
               font-size: 20px; }
 
 .info__copy p {
-  color: black; }
+  color: white; }
 
 /* MENUUU */
 /* transfomacion */
@@ -152,7 +155,7 @@ body {
 
 .navegador__seleccion .navegador__boton .navegador__ruta {
   text-decoration: none;
-  color: white;
+  color: #fff;
   display: block;
   text-align: center; }
 
