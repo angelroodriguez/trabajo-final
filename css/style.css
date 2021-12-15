@@ -34,7 +34,7 @@ p {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #36656b;
+  background: #a71818;
   color: white; }
 
 .contenedor__grid {
@@ -58,7 +58,7 @@ body {
 
 .contenedor__grid .navegador {
   /* background: white; */
-  color: #0a0a09;
+  color: #0f0f0f;
   grid-column: 1 / 4;
   height: 8rem; }
 
@@ -137,7 +137,6 @@ body {
 .info__copy p {
   color: white; }
 
-/* MENUUU */
 /* transfomacion */
 .navegador {
   width: auto;
